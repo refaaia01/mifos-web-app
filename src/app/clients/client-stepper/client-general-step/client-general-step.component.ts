@@ -117,9 +117,9 @@ export class ClientGeneralStepComponent implements OnInit {
         this.createClientForm.addControl('firstname', new UntypedFormControl('', [Validators.required, Validators.pattern('(^[A-z]).*')]));
         this.createClientForm.addControl('middlename', new UntypedFormControl('', Validators.pattern('(^[A-z]).*')));
         this.createClientForm.addControl('lastname', new UntypedFormControl('', [Validators.required, Validators.pattern('(^[A-z]).*')]));
-        this.createClientForm.addControl('country', new UntypedFormControl('', [Validators.required]));
-        this.createClientForm.addControl('city', new UntypedFormControl('', [Validators.required]));
-        this.createClientForm.addControl('street', new UntypedFormControl('', [Validators.required]));
+        this.createClientForm.addControl('country', new UntypedFormControl('', []));
+        this.createClientForm.addControl('city', new UntypedFormControl('', []));
+        this.createClientForm.addControl('street', new UntypedFormControl('', []));
       } else {
         this.createClientForm.removeControl('firstname');
         this.createClientForm.removeControl('middlename');

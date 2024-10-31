@@ -71,10 +71,7 @@
 
     <mat-form-field *ngIf="createClientForm.contains('country')" fxFlex="48%">
       <mat-label>{{"labels.inputs.Country" | translate}}</mat-label>
-      <input matInput required formControlName="country">
-      <mat-error *ngIf="createClientForm.controls.country.hasError('required')">
-        {{"labels.inputs.Client country" | translate}} {{"labels.commons.is" | translate}} <strong>{{"labels.commons.required" | translate}}</strong>
-      </mat-error>
+      <input matInput formControlName="country">
       <mat-error *ngIf="createClientForm.controls.country.hasError('pattern')">
         {{"labels.inputs.Client country" | translate}} <strong>{{"labels.inputs.cannot" | translate}}</strong> {{"labels.commons.begin with a special character or number" | translate}}
       </mat-error>
@@ -82,10 +79,7 @@
 
     <mat-form-field *ngIf="createClientForm.contains('city')" fxFlex="48%">
       <mat-label>{{"labels.inputs.City" | translate}}</mat-label>
-      <input matInput required formControlName="city">
-      <mat-error *ngIf="createClientForm.controls.city.hasError('required')">
-        {{"labels.inputs.Client city" | translate}} {{"labels.commons.is" | translate}} <strong>{{"labels.commons.required" | translate}}</strong>
-      </mat-error>
+      <input matInput formControlName="city">
       <mat-error *ngIf="createClientForm.controls.city.hasError('pattern')">
         {{"labels.inputs.Client city" | translate}} <strong>{{"labels.inputs.cannot" | translate}}</strong> {{"labels.commons.begin with a special character or number" | translate}}
       </mat-error>
@@ -93,10 +87,7 @@
 
     <mat-form-field *ngIf="createClientForm.contains('street')" fxFlex="48%">
       <mat-label>{{"labels.inputs.Street" | translate}}</mat-label>
-      <input matInput required formControlName="street">
-      <mat-error *ngIf="createClientForm.controls.street.hasError('required')">
-        {{"labels.inputs.Client street" | translate}} {{"labels.commons.is" | translate}} <strong>{{"labels.commons.required" | translate}}</strong>
-      </mat-error>
+      <input matInput formControlName="street">
       <mat-error *ngIf="createClientForm.controls.street.hasError('pattern')">
         {{"labels.inputs.Client street" | translate}} <strong>{{"labels.inputs.cannot" | translate}}</strong> {{"labels.commons.begin with a special character or number" | translate}}
       </mat-error>
